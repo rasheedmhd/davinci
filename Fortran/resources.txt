@@ -1,0 +1,3 @@
+https://en.wikipedia.org/wiki/Fortran
+https://fortran-lang.org/
+https://www.spiceworks.com/tech/tech-general/articles/what-is-fortran/
