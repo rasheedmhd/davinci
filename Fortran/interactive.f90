@@ -1,13 +1,16 @@
 program print
 
     ! STRING VARIABLES
+    ! character*50 :: question
+    ! character*3  :: confirmation
     character*20 :: name
-    character*50 :: question
+
+    ! Dynamic string sizes
+    character(:), allocatable :: question
     character*3  :: confirmation
 
     ! PRINTING TO SCREEN
     print *, ">> What's your name"
-
     ! STRING CONCATENATION (//)
     ! ASSIGNMENT (=)
     read *, name 
@@ -16,7 +19,7 @@ program print
     print *, question
     print *, ">> Type 'yes' if correct or 'no' to correct it."
     read  *, confirmation
-    
+
     ! if (confirmation .eq. "yes") then
     !     print *, ">> awesome"
     !     print *, ">> Your name is ", name
@@ -39,5 +42,4 @@ program print
     print *, ">> awesome"
     print *, ">> Your name is "// name //"."
     
-
-end program
+end program print
